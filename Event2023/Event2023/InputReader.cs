@@ -12,7 +12,11 @@
             var ret = new List<string>();
             foreach (var line in lines)
             {
-                ret.Add(line.Replace("\n", "").Replace("\r", ""));
+                var cleanLine = line.Replace("\n", "").Replace("\r", "");
+                if (!string.IsNullOrWhiteSpace(cleanLine))
+                {
+                    ret.Add(cleanLine);
+                }
             }
 
             return ret;
