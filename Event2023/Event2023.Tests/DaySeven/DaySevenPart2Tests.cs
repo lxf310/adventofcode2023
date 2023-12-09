@@ -4,7 +4,7 @@ namespace Event2023.Tests.DaySeven
 {
     public class DaySevenPart2Tests
     {
-        private DaySevenPart1 _solver = new DaySevenPart1();
+        private DaySevenPart2 _solver = new DaySevenPart2();
 
         [Fact]
         public void GetLabel_ReturnsLabel()
@@ -15,7 +15,7 @@ namespace Event2023.Tests.DaySeven
             Assert.Equal(Label.FourOfAKind, _solver.GetLabel("AJJJB"));
             Assert.Equal(Label.FiveOfAKind, _solver.GetLabel("AJJJA"));
             Assert.Equal(Label.FullHouse, _solver.GetLabel("AABBA"));
-            Assert.Equal(Label.ThreeOfAKind, _solver.GetLabel("AABBC"));
+            Assert.Equal(Label.TwoPair, _solver.GetLabel("AABBC"));
             Assert.Equal(Label.FiveOfAKind, _solver.GetLabel("AAAJJ"));
             Assert.Equal(Label.FourOfAKind, _solver.GetLabel("AABJJ"));
             Assert.Equal(Label.FullHouse, _solver.GetLabel("AABBJ"));
@@ -34,7 +34,7 @@ namespace Event2023.Tests.DaySeven
                 "32T3K 765",
                 "T55J5 684",
                 "KK677 28",
-                "TJJT 220",
+                "KTJJT 220",
                 "QQQJA 483"
             }));
         }
