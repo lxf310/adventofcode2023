@@ -2,8 +2,9 @@
 
 using Event2023;
 using Event2023.Puzzles.DayEleven;
+using Event2023.Puzzles.DayTen;
 
 var reader = new InputReader();
-var solver = new DayElevenPart2();
-Console.WriteLine(solver.Total(reader.ReadInputs("Inputs\\11.txt"), 1000000));
+var solver = new DayTenPart1();
+Console.WriteLine(solver.Total(reader.ReadInputs("Inputs\\10.txt")));
 

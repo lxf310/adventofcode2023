@@ -1,9 +1,4 @@
 ﻿using Event2023.Puzzles.DayEleven;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Event2023.Tests.DayEleven
 {
