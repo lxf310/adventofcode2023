@@ -2,7 +2,7 @@
 {
     public class InputReader
     {
-        public List<string> ReadInputs(string filename)
+        public List<string> ReadInputs(string filename, bool removeWhiteLine = true)
         {
             if (string.IsNullOrEmpty(filename)) throw new ArgumentNullException(nameof(filename));
 
@@ -13,7 +13,14 @@
             foreach (var line in lines)
             {
                 var cleanLine = line.Replace("\n", "").Replace("\r", "");
-                if (!string.IsNullOrWhiteSpace(cleanLine))
+                if (removeWhiteLine)
+                {
+                    if (!string.IsNullOrWhiteSpace(cleanLine))
+                    {
+                        ret.Add(cleanLine);
+                    }
+                }
+                else
                 {
                     ret.Add(cleanLine);
                 }
