@@ -10,5 +10,5 @@ B is just the perimeter - the sum of N across all commands.
 (note: each command actually covers N+1 squares, but the ending square of each command is also covered by the
  starting square of the next command. So summing N gets the correct number of squares in the path)
 We can compute the area A in two different ways:
-- The shoelace formula: A = (\sum X[i]*Y[i+1] - X[i+1]*Y[i]) // 2
-- Green's theorem: A = \sum y * dx = \sum x * dy
+- The shoelace formula: A = (sum X[i]*Y[i+1] - X[i+1]*Y[i]) // 2
+- Green's theorem: A = sum y * dx = sum x * dy

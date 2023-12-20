@@ -1,8 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using Event2023;
-using Event2023.Puzzles.DayNineteen;
+using Event2023.Puzzles.DayTwenty;
 
-var reader = new InputReader();
-var solver = new DayNineteenPart2();
-Console.WriteLine(solver.Total(reader.ReadInputs("Inputs\\19.txt", false)));
+var solver = new DayTwentyPart2();
+Console.WriteLine(solver.Total(Helper.ReadInputs("Inputs\\20.txt")));

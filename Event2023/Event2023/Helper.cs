@@ -1,8 +1,13 @@
 ﻿namespace Event2023
 {
-    public class InputReader
+    public class Helper
     {
-        public List<string> ReadInputs(string filename, bool removeWhiteLine = true)
+        public static long GCD(long a, long b) // greatest common dividor
+        {
+            return b == 0 ? a : GCD(b, a % b);
+        }
+
+        public static List<string> ReadInputs(string filename, bool removeWhiteLine = true)
         {
             if (string.IsNullOrEmpty(filename)) throw new ArgumentNullException(nameof(filename));
 

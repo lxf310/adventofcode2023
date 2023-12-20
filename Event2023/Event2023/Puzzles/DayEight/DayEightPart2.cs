@@ -4,11 +4,6 @@ namespace Event2023.Puzzles.DayEight
 {
     public class DayEightPart2
     {
-        private long GCD(long a, long b) // greatest common dividor
-        {
-            return b == 0 ? a : GCD(b, a % b);
-        }
-
         public long Total(List<string> lines)
         {
             var indexMap = new Dictionary<char, int>
@@ -70,7 +65,7 @@ namespace Event2023.Puzzles.DayEight
             {
                 foreach (var step in cycle)
                 {
-                    ret = ret * (step / GCD(ret, step));
+                    ret = ret * (step / Helper.GCD(ret, step));
                 }
             }
 
